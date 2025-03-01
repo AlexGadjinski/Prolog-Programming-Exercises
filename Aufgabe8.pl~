@@ -1,0 +1,6 @@
+combine_lists([],[],[]).
+combine_lists([X|T1],[Y|T2],Final_result) :-
+    Final_result is [X,Y|Result],
+    combine_lists(T1,T2,Result).
+
+

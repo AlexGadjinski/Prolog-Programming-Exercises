@@ -1,0 +1,7 @@
+same_type([],[]).
+same_type([X|T1],[Y|T2]) :-
+    term_type(X,Type),
+    term_type(Y,Type),
+    same_type(T1,T2).
+
+

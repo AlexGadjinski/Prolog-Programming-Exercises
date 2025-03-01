@@ -1,0 +1,5 @@
+generate_facts([]).
+generate_facts([[Name, Price, Quantity]|Rest]) :-
+    assert(product(Name, Price, Quantity)),
+    generate_facts(Rest).
+

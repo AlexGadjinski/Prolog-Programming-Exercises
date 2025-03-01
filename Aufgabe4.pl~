@@ -1,0 +1,3 @@
+bigger(tick(_),0).
+bigger(tick(X),tick(Y)) :- bigger(X,Y).
+
